@@ -38,3 +38,19 @@ Total Marks = 433.0
 Average = 86.6
 Grade: A
 ```
+
+
+### Task 3: Account Counter (Static & Packages)
+
+* **Description:** Demonstrates `static` variables (shared counter), package encapsulation (`com.bank.app`), and access modifiers (`private`, `protected`, `public`).
+* **Files:** `t3/com/bank/app/Main.java`, `t3/com/bank/app/Account.java`
+* **Output:**
+
+```text
+Account Holder: Kowshik
+Balance: 5000.0
+Account Holder: Rahul
+Balance: 8000.0
+Total Accounts Created: 2
+```
+
