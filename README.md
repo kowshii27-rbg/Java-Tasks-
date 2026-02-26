@@ -13,12 +13,12 @@ Demonstrates Object-Oriented Programming (OOP) principles including Encapsulatio
 t1/Main.java  
 
 **Output:**
-Deposited: 1000.0
-Withdrawn: 2000.0
+Deposited: 1000.0.
+Withdrawn: 2000.0.
 Balance: 4000.0
 ----------------
-Deposited: 2000.0
-Minimum balance of 500 must be maintained
+Deposited: 2000.0.
+Minimum balance of 500 must be maintained.
 Balance: 3000.0
 
 
