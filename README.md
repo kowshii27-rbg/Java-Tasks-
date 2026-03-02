@@ -54,3 +54,14 @@ Balance: 8000.0
 Total Accounts Created: 2
 ```
 
+### Task 4: Array and String Manipulations
+
+* **Description:** Demonstrates core programming logic including reversing an array, finding the second largest element, and checking if a string is a palindrome using the two-pointer technique.
+* **Files:** `t4/reversearray.java`, `t4/findseclargestelement.java`, `t4/palindromecheck.java`
+* **Output:**
+
+```text
+5 4 3 2 1 
+Second largest element is: 70
+The string is not a palindrome
+```
