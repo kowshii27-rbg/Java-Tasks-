@@ -65,3 +65,25 @@ Total Accounts Created: 2
 Second largest element is: 70
 The string is not a palindrome
 ```
+
+### Task 5: Collections and Generics
+
+* **Description:** Demonstrates the Java Collections Framework and Generics. Includes removing duplicates with `HashSet`, storing custom objects in an `ArrayList`, creating a custom generic `Box<T>` class, and calculating element frequency using a `HashMap`.
+* **Files:** `t5/SetExample.java`, `t5/ListExamplec.java`, `t5/GenericExample.java`, `t5/FrequencyCount.java`
+* **Output:**
+
+```text
+[10, 20, 30, 40]
+
+Student List:
+1 Kowshik
+2 Suraj
+3 Rahul
+4 Rajesh
+
+100
+kowshik
+4.17
+
+{1=2, 2=3, 3=1, 4=1}
+```
