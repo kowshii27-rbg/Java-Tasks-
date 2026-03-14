@@ -87,3 +87,16 @@ kowshik
 
 {1=2, 2=3, 3=1, 4=1}
 ```
+
+### Task 6: Custom Exception Handling
+
+* **Description:** Demonstrates how to create and handle a custom exception (`InvalidAgeException`) using `try`, `catch`, `finally`, `throw`, and `throws` keywords.
+* **Files:** `t6/CustomExceptionDemo.java`
+* **Output:**
+
+```text
+Enter age: 16
+Exception: Age must be 18 or above
+Finally block executed
+
+```
