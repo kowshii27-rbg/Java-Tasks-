@@ -176,4 +176,46 @@ Status enum : ACTIVE | ordinal=0
   Avg   : $280.62
   Sum   : $2244.94
   ```
+  ### Task 9: Multithreading and Synchronization
+
+* **Description:** Demonstrates core concurrency concepts in Java. Explores the Thread Lifecycle (New, Runnable, Terminated, etc.), Thread Synchronization using the `synchronized` keyword to prevent race conditions, and Inter-thread Communication using `wait()` and `notify()` to solve the classic Producer-Consumer problem.
+* **Files:** `t9/ThreadDemo.java`
+* **Output:**
+
+```text
+┌─ 1. Thread Lifecycle ───────────────────────────────┐
+  [NEW]        t1 state: NEW
+  [STARTED]    t1 state: RUNNABLE
+  [RUNNING]    Task-A started  | thread: Worker-1
+  [RUNNING]    Task-B started  | thread: Worker-2
+  [TERMINATED] Task-A finished | thread: Worker-1
+  [TERMINATED] Task-B finished | thread: Worker-2
+  [JOINED]     t1 state: TERMINATED
+
+┌─ 2. Synchronized Shared Counter ────────────────────┐
+  Thread-A   read 0 → wrote 1
+  Thread-A   read 1 → wrote 2
+  Thread-A   read 2 → wrote 3
+  Thread-B   read 3 → wrote 4
+  Thread-B   read 4 → wrote 5
+  Thread-B   read 5 → wrote 6
+  Final count: 6 (expected 6)
+
+┌─ 3. Producer-Consumer (wait/notify) ───────────────┐
+  [PRODUCER]  produced 1  | buffer: [1]
+  [CONSUMER]  consumed 1  | buffer: []
+  [PRODUCER]  produced 2  | buffer: [2]
+  [PRODUCER]  produced 3  | buffer: [2, 3]
+  [PRODUCER]  buffer full  — waiting...
+  [CONSUMER]  consumed 2  | buffer: [3]
+  [PRODUCER]  produced 4  | buffer: [3, 4]
+  [PRODUCER]  buffer full  — waiting...
+  [CONSUMER]  consumed 3  | buffer: [4]
+  [PRODUCER]  produced 5  | buffer: [4, 5]
+  [CONSUMER]  consumed 4  | buffer: [5]
+  [CONSUMER]  consumed 5  | buffer: []
+
+┌─ All threads completed ─────────────────────────────┐
+  Done.
+  ```
 
