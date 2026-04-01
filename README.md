@@ -126,4 +126,54 @@ Serialized to employee.ser
 Deserialized: Employee{name='Kowshik', id=101, status=ACTIVE}
 Status enum : ACTIVE | ordinal=0
 ```
+### Task 8: Functional Programming and Streams
+
+* **Description:** Demonstrates modern Java functional programming concepts including Core Functional Interfaces (`Supplier`, `Predicate`, `Function`, `Consumer`) and advanced Stream API operations (`filter`, `map`, `reduce`, `sorted`, `collect`, and `DoubleSummaryStatistics`).
+* **Files:** `t8/FunctionalDemo.java`
+* **Output:**
+
+```text
+┌─ In-stock Electronics ──────────────────────────────┐
+  Laptop       | Electronics | $999.99 | stock: 5
+  Monitor      | Electronics | $499.99 | stock: 2
+
+┌─ Affordable products (< $500) ──────────────────────┐
+  Headphones ($149.99)
+  Desk ($349.00)
+  Chair ($199.50)
+  Notebook ($4.99)
+  Pen ($1.49)
+  Monitor ($499.99)
+  Lamp ($39.99)
+
+┌─ Total in-stock inventory value ────────────────────┐
+  $9670.31
+
+┌─ In-stock electronics after 10% discount (sorted) ──┐
+  Monitor      → $449.99
+  Laptop       → $899.99
+
+┌─ Products grouped by category ──────────────────────┐
+  [Electronics]
+  Laptop       | Electronics | $999.99 | stock: 5
+  Headphones   | Electronics | $149.99 | stock: 0
+  Monitor      | Electronics | $499.99 | stock: 2
+  [Furniture]
+  Desk         | Furniture   | $349.00 | stock: 3
+  Chair        | Furniture   | $199.50 | stock: 8
+  Lamp         | Furniture   | $ 39.99 | stock: 12
+  [Stationery]
+  Notebook     | Stationery  | $  4.99 | stock: 50
+  Pen          | Stationery  | $  1.49 | stock: 200
+
+┌─ Out-of-stock items ─────────────────────────────────┐
+  Headphones ($149.99)
+
+┌─ Price statistics ───────────────────────────────────┐
+  Count : 8
+  Min   : $1.49
+  Max   : $999.99
+  Avg   : $280.62
+  Sum   : $2244.94
+  ```
 
