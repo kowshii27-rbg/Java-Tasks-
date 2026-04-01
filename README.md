@@ -99,4 +99,31 @@ Enter age: 16
 Exception: Age must be 18 or above
 Finally block executed
 
+### Task 7: Advanced Concepts (Annotations, Enums, File I/O, Serialization)
+
+* **Description:** Demonstrates advanced Java features including defining and reading custom runtime annotations (`@AppInfo`), using enumerations (`Status`), basic File I/O operations (writing/reading text files), and Object Serialization/Deserialization.
+* **Files:** `t7/Demo.java`
+* **Output:**
+
+```text
+=== Enum ===
+Created : Employee{name='Kowshik', id=101, status=ACTIVE}
+Is active? true
+
+=== Annotation ===
+Author : Kowshik
+Version: 2.0
+
+=== File I/O ===
+Written to employee.txt
+Read back: Employee{name='Kowshik', id=101, status=ACTIVE}
+
+=== Serialization ===
+Serialized to employee.ser
+
+=== Deserialization ===
+Deserialized: Employee{name='Kowshik', id=101, status=ACTIVE}
+Status enum : ACTIVE | ordinal=0
+```
+
 ```
