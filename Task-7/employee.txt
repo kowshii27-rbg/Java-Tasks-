@@ -1,0 +1,1 @@
+Employee{name='Alice', id=101, status=ACTIVE}
