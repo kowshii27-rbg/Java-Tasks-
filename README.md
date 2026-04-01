@@ -218,4 +218,41 @@ Status enum : ACTIVE | ordinal=0
 ┌─ All threads completed ─────────────────────────────┐
   Done.
   ```
+### Task 10: Nested and Inner Classes
 
+* **Description:** Demonstrates the four types of nested classes in Java: Member Inner Class, Static Nested Class, Local Class, and Anonymous Class. Explores their syntax, instantiation, and access rules to their enclosing scopes.
+* **Files:** `t10/InnerClassDemo.java`
+* **Output:**
+
+```text
+┌─ 1. Member Inner Class ─────────────────────────────┐
+  Engine : BMW | 300 hp
+  Turbo  : 15 psi boost
+  Total  : ~450 hp (estimated)
+
+┌─ 2. Static Nested Class ────────────────────────────┐
+  Fuel     : Petrol
+  Cylinders: 6
+
+┌─ 3. Local Class ────────────────────────────────────┐
+  Item : Laptop      Price: $899.00
+  Tax  : 18%          Tax  : $161.82
+                       Total: $1060.82
+
+  Item : Monitor     Price: $349.00
+  Tax  : 18%          Tax  : $ 62.82
+                       Total: $411.82
+
+┌─ 4. Anonymous Class ────────────────────────────────┐
+  Circle  r=7.0 → area=153.94
+  Rectangle 5.0x9.0 → area=45.00
+  Good day, Alice. Welcome aboard.
+
+┌─ Summary ───────────────────────────────────────────┐
+  Member inner  : engine.new Turbo(15)   — has outer 'this'
+  Static nested : new Engine.Specs(...)  — no outer 'this'
+  Local class   : defined in method block — captures locals
+  Anonymous     : new Interface() { ... } — no name, one-off
+
+```
+  
